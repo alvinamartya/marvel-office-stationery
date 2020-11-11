@@ -1,7 +1,12 @@
-* {
+body {
     margin: 0;
+    padding: 0;
 }
 
 @import 'index/fonts';
 @import 'index/header';
 @import 'index/home';
+@import 'index/atk';
+@import 'index/component';
+@import 'index/jenis_atk';
+@import 'index/vendor';

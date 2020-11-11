@@ -1,13 +1,37 @@
 $primary-color: #F6830F;
+
+@mixin nav-a($active: false) {
+    text-decoration: none !important;
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: black;
+    margin-left: 20px;
+    transition: border-bottom 0.2s;
+    @if $active {
+        border-bottom: solid $primary-color 2px;
+    } @else {
+        border-bottom: solid transparent 2px;
+    }
+
+    &:hover {
+        border-bottom: solid $primary-color 2px;
+        color: black !important;
+    }
+
+    @media screen and(max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
 header {
     background-color: white;
-    position: fixed;
-    width: 100%;
+    padding-top: 17px !important;
+    padding-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    clear: both;
+    border-bottom: solid $primary-color 2px;
 
     h1 {
         font-family: Rubik-Medium;
@@ -23,23 +47,12 @@ header {
         margin-top: 4px;
         ul {
             li {
-                list-style: none;
                 a {
-                    text-decoration: none;
-                    font-family: Poppins-Medium;
-                    font-size: 16px;
-                    color: black;
-                    margin-left: 20px;
-                    border-bottom: solid transparent 2px;
-                    transition: border-bottom 0.2s;
+                    @include nav-a(false);
+                }
 
-                    &:hover {
-                        border-bottom: solid $primary-color 2px;
-                    }
-
-                    @media screen and(max-width: 768px) {
-                        font-size: 12px;
-                    }
+                a.active {
+                    @include nav-a(true)
                 }
                 display: inline-block;
             }

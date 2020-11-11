@@ -1,0 +1,25 @@
+$btn-color: #FFA62B;
+$btn-color-hover: #fc9300;
+.btn-home {
+    margin-top: 20px;
+    color: white;
+    background-color: $btn-color;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: $btn-color-hover;
+    }
+}
+
+.component-search {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
