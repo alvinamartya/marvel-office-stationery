@@ -1,0 +1,12 @@
+@import 'component';
+
+.atk {
+    height: 400px;
+    margin-top: 120px;
+
+    .container {
+        h3 {
+            @include h3();
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import 'component';
+
+.jenis-atk {
+    background-color: #f4f4f2;
+    height: 460px;
+
+    .container {
+        padding-top: 50px;
+        padding-bottom: 40px;
+
+        h3 {
+            @include h3();
+        }
+    }
+}

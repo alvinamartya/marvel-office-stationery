@@ -1,0 +1,13 @@
+@import 'component';
+
+.vendor {
+    height: 400px;
+    .container {
+        padding-top: 50px;
+        padding-bottom: 40px;
+
+        h3 {
+            @include h3();
+        }
+    }
+}
