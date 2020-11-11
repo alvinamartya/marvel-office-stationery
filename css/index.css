@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: Rubik-Medium;
+  src: url("../../fonts/Rubik-Medium.ttf");
+}
+
+@font-face {
+  font-family: Goldman-Regular;
+  src: url("../../fonts/Goldman-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../../fonts//Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("../../fonts/Roboto-Medium.ttf");
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  font-family: Rubik-Medium;
+  font-size: 26px;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+}
+
+header nav {
+  margin-right: 30px;
+  margin-top: 4px;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: black;
+  margin-left: 20px;
+  border-bottom: solid transparent 2px;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+header nav ul li a:hover {
+  border-bottom: solid #F6830F 2px;
+}
+
+@media screen and (max-width: 768px) {
+  header nav ul li a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    margin-top: 6px;
+  }
+}
+
+.background-orange {
+  background-color: #F6830F;
+  height: 90vh;
+}
+/*# sourceMappingURL=index.css.map */
